@@ -1,0 +1,17 @@
+.section {
+    margin: 20px 0;
+
+    .sectionHeader {
+        text-align: center;
+        margin: 0px 0 20px 0;
+        font-size: 28px;
+        font-weight: 500;
+        text-decoration: underline crimson;
+    }
+
+    .cardContainer {
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}

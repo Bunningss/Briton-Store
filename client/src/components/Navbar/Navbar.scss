@@ -1,0 +1,30 @@
+.navbar {
+    height: 60px;
+    padding: 0 60px;
+    display: flex;
+    align-items: center;
+    background-color: #dee2e6;
+
+    .navLeft {
+        width: 50%;
+
+        .logoContainer {
+
+            .logo {
+                width: 100px;
+            }
+        }
+    }
+
+    .navRight {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+
+        .navRightImg {
+            width: 30px;
+        }
+    }
+}

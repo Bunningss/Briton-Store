@@ -1,0 +1,45 @@
+.card {
+    height: 500px;
+    width: 313px;
+    min-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: all .3s ease;
+
+    &:hover {
+        transform: translate(5px, -5px);
+    }
+
+    a {
+        .wrapper {
+            height: 100%;
+            width: 100%;
+
+            .textZone {
+                height: 30%;
+                width: 100%;
+                color: #000;
+
+                p {
+                    padding: 15px 0;
+                    font-size: 18px;
+                    font-weight: 500;
+                }
+
+                h4 {
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+            }
+
+            .cardImg {
+                height: 70%;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

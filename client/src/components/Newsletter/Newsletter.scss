@@ -1,0 +1,49 @@
+.newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+
+    .wrapper {
+        background-color: var(--white);
+        border-radius: 5px;
+        width: 60%;
+        padding: 15px 0;
+
+        .textZone {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h2 {
+                font-size: 24px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 10px 0;
+            }
+        }
+
+        .newsForm {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .primaryBtn {
+                width: 50%;
+            }
+
+            .input {
+                width: 50%;
+            }
+        }
+    }
+}
