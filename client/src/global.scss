@@ -28,9 +28,23 @@ a {
     text-decoration: none;
 }
 
+// Responsive
+$laptop: 1024px;
+
+@mixin laptop {
+    @media (max-width: #{$laptop}) {
+        @content
+    }
+}
+
 // Universal
+
 .sectionPadding {
     padding-left: 300px;
+
+    @include laptop {
+        padding-left: 20px;
+    }
 }
 
 // Animations
@@ -40,5 +54,14 @@ a {
         }
         100% {
             opacity: 1;
+        }
+    }
+
+    @keyframes goUp {
+        0% {
+            transform: translate(0, 20px);
+        }
+        100% {
+            transform: translate(0, 0);
         }
     }

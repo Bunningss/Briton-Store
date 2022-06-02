@@ -11,11 +11,11 @@
         font-weight: 600;
 
         span {
-            color: #ff4d6d;
+            color: var(--accentColor);
         }
 
         a {
-            color: #ff4d6d;
+            color: var(--accentColor);
         }
     }
 }

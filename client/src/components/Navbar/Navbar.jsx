@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import logo from '../../img/briton logo.png';
 import cart from '../../img/cart.png';
 import User from '../UserIcon/User';
+import Hamburger from '../Hamburger/Hamburger';
 
-const Navbar = () => {
+const Navbar = ({ active, setActive }) => {
   return (
     <div className='navbar'>
       <div className="navLeft">
@@ -13,11 +14,12 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navRight">
-        <Link className='navRightImgContainer' to='/'>
+        <Link className='navRightImgContainer' to='/cart'>
           <img src={cart} alt="" className="navRightImg" />
         </Link>
         <User/>
       </div>
+      <Hamburger active={active} setActive={setActive}/>
     </div>
   )
 }

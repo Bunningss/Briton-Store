@@ -15,10 +15,10 @@ const NavHover = ({show}) => {
             href: "/login"
         },
     ];
-console.log(show)
-    const hover = useRef();
 
-useEffect((e) => {
+const hover = useRef();
+
+useEffect(() => {
     if (!show) {
         hover.current.style.display = 'none'
     } else if (show) {

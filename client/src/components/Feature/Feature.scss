@@ -1,0 +1,20 @@
+            .feature {
+                width: 60%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 0;
+                padding: 20px;
+                border-radius: 5px;
+                border: 1px solid grey;
+
+                p {
+                    font-size: 18px;
+                    font-weight: 500;
+
+                    span {
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                }
+            }

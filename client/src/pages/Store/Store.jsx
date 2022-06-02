@@ -22,16 +22,6 @@ const Store = () => {
         <h2 className="header">Store. <span>the best way to buy products you love.</span></h2>
         <div className="storeWrapper">
             <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
-            <Card/>
         </div>
     </div>
   )

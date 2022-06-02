@@ -1,0 +1,24 @@
+.buystrip {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    margin: 20px 0;
+    padding: 20px 0;
+
+    .buystripContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

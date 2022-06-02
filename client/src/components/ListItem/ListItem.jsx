@@ -1,11 +1,11 @@
 import './ListItem.scss';
 import { Link } from 'react-router-dom';
 
-const ListItem = ({ item }) => {
+const ListItem = ({ item, handleClick }) => {
   return (
-    <li className='listItem'>
-        <Link to={item.href}>{item.name}</Link>
-    </li>
+    <Link to={item.href} onClick={handleClick}>
+      <li className="listItem">{item.name}</li>
+    </Link>
   )
 }
 
