@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .footer {
     background-color: #282627;
     display: flex;
@@ -14,6 +16,10 @@
             color: #fff;
             font-weight: 600;
         }
+
+        @include mobile {
+            font-size: 24px;
+        }
     }
 
     h6 {
@@ -22,9 +28,17 @@
         text-transform: capitalize;
         color: lightgray;
         margin: 15px 0;
+
+        @include mobile {
+            font-size: 20px;
+        }
     }
 
     .footerLogo {
         width: 250px;
+
+        @include mobile {
+            width: 200px;
+        }
     }
 }

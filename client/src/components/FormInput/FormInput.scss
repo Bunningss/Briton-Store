@@ -1,0 +1,27 @@
+.formInput {
+    padding: 10px 15px;
+    border: 1px solid lightgray;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 5px 0 2px 0;
+
+    &:invalid[focused="true"] ~ .error {
+        display: block;
+    }
+
+    &:invalid[focused="true"] {
+        border: 1px solid crimson;
+    }
+}
+
+.error {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--accentColor);
+    margin: 0 0 5px 0;
+    display: none;
+    text-align: center;
+}

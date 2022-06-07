@@ -1,19 +1,33 @@
+@import '../../global.scss';
+
 .hamburger {
     width: 30px;
     height: 20px;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
     margin: 0 10px;
+    z-index: 6;
+
+    @include tab {
+        display: flex;
+    }
 
     &.active {
+        // position: fixed;
+        // top: 20px;
+        // right: 20px;
+
+        @include mobile {
+            // right: 10px;
+        }
 
         .line {
             background-color: #fff;
 
             &:nth-child(1) {
-                transform: rotate(45deg) translate(2.5px, -.5px);
+                transform: rotate(45deg) translate(2.8px, -.6px);
             }
 
             &:nth-child(2) {

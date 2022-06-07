@@ -8,7 +8,7 @@
     height: 30px;
     background-color: var(--grey);
 
-    @include laptop {
+    @include tab {
         display: none;
     }
 

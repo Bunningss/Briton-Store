@@ -6,25 +6,26 @@
     top: 0;
     left: 0;
     z-index: 5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     transition: all .3s ease;
     transform: translateY(-100vh);
+    padding: 60px 20px;
 
     &.active {
         transform: translateY(0vh);
+        animation: reveal .8s linear;
     }
 
     .sidebarList {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 25px;
+        gap: 30px;
 
         .listItem {
             color: var(--white);
+            border-bottom: 1px solid lightgrey;
+            padding: 10px 0;
             animation: goUp .5s linear;
+            animation-delay: 5;
         }
     }
 }

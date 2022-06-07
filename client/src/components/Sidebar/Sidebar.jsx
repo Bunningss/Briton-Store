@@ -7,6 +7,12 @@ const Sidebar = ({ active, setActive }) => {
   const handleClick = () => {
     setActive(!active)
   };
+  
+  if ( active ) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "visible";
+  }
 
   return (
     <div className={active ? 'sidebar active' : 'sidebar'}>

@@ -13,6 +13,17 @@ export const sliderData = [
     },
 ];
 
+export const bannerData = [
+    {
+        id: 1,
+        img: "https://images.pexels.com/photos/2850287/pexels-photo-2850287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+        id: 2,
+        img: "https://images.pexels.com/photos/2850287/pexels-photo-2850287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+];
+
 export const newsletterInputs = [
     {
         id: 1,
@@ -37,7 +48,7 @@ export const linkBar = [
     {
         id: 2,
         name: "Beverages",
-        href: "store/category=Beverage"
+        href: ""
     },
     {
         id: 3,

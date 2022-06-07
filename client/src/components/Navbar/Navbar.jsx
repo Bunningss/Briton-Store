@@ -4,6 +4,7 @@ import logo from '../../img/briton logo.png';
 import cart from '../../img/cart.png';
 import User from '../UserIcon/User';
 import Hamburger from '../Hamburger/Hamburger';
+import NumberWidget from '../NumberWidget/NumberWidget';
 
 const Navbar = ({ active, setActive }) => {
   return (
@@ -16,6 +17,7 @@ const Navbar = ({ active, setActive }) => {
       <div className="navRight">
         <Link className='navRightImgContainer' to='/cart'>
           <img src={cart} alt="" className="navRightImg" />
+          <NumberWidget/>
         </Link>
         <User/>
       </div>

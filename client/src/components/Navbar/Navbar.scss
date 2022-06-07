@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .navbar {
     height: 60px;
     padding: 0 60px;
@@ -5,6 +7,14 @@
     align-items: center;
     background-color: #dee2e6;
     z-index: 10;
+
+    @include tab {
+        padding: 0 20px;
+    }
+
+    @include mobile {
+        padding: 0 10px;
+    }
 
     .navLeft {
         width: 50%;
@@ -24,8 +34,18 @@
         justify-content: flex-end;
         gap: 15px;
 
-        .navRightImg {
-            width: 30px;
+        .navRightImgContainer {
+            position: relative;
+
+            .navRightImg {
+                width: 30px;
+            }
+
+            .widget {
+                position: absolute;
+                top: 0;
+                right: -8px;
+            }
         }
     }
 }

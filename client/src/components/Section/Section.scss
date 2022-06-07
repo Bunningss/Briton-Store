@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .section {
     margin: 20px 0;
 
@@ -13,5 +15,12 @@
         display: flex;
         overflow-x: scroll;
         overflow-y: hidden;
+        justify-content: center;
+        gap: 30px;
+
+        @include laptop {
+            justify-content: flex-start;
+            gap: 15px;
+        }
     }
 }

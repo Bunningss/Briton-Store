@@ -10,8 +10,9 @@ import Newsletter from './components/Newsletter/Newsletter';
 import Product from './pages/Product/Product';
 import Login from './pages/Login/Login';
 import Sidebar from './components/Sidebar/Sidebar';
-import Hamburger from './components/Hamburger/Hamburger';
 import { useState } from 'react';
+import Register from './pages/Register/Register';
+import Cart from './pages/Cart/Cart';
 
 function App() {
   const [ active, setActive ] = useState(false);
@@ -24,8 +25,10 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/store' element={<Store/>}/>
+        <Route exact path='/cart' element={<Cart/>}/>
         <Route exact path='/product/:id' element={<Product/>}/>
         <Route exact path='/login' element={<Login/>}/>
+        <Route exact path='/register' element={<Register/>}/>
       </Routes>
       <Newsletter/>
       <Contact/>

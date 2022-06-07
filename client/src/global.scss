@@ -37,6 +37,22 @@ $laptop: 1024px;
     }
 }
 
+$tab: 768px;
+
+@mixin tab {
+    @media (max-width: #{$tab}) {
+        @content
+    }
+}
+
+$mobile: 500px;
+
+@mixin mobile {
+    @media (max-width: #{$mobile}) {
+        @content
+    }
+}
+
 // Universal
 
 .sectionPadding {
