@@ -1,4 +1,8 @@
-# Briton-Store Flaws.
+# Briton-Store.
 
-## Could've made an auth component and passed it to login/register/login-step-2 pages.
+## Product Filter
+## Place Order
+## Payment
+## Subscription
+## Newsletter
 
