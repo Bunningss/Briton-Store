@@ -1,7 +1,7 @@
 import './Product.scss';
 import { useState } from 'react';
 import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
-import demo from '../../img/trans-car.png';
+import demo from '../../img/product-demo.png';
 import plus from '../../img/plus.png';
 import minus from '../../img/minus.png';
 import Feature from '../../components/Feature/Feature';
@@ -28,8 +28,8 @@ const Product = () => {
         <Buystrip/>
       </div>
       <div className="productRight">
-        <h2 className="headerText">Placeholder Title</h2>
-        <h3 className="headerText price">Placeholder Price £</h3>
+        <h2 className="headerText">Boost Energy Drink</h2>
+        <h3 className="headerText price">Price - 30£</h3>
         <div className="features">
           <Feature/>
           <Feature/>

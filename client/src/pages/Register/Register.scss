@@ -1,21 +1,32 @@
+@import '../../global.scss';
+
 .register {
     animation: reveal .5s linear;
     height: calc(100vh - 90px);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+
+    @include tab {
+        height: calc(100vh - 60px);
+    }
 
     .wrapper {
         width: 500px;
         background-color: var(--white);
         border-radius: 5px;
 
+        @include mobile {
+            width: 100%;
+        }
+
         .header {
             text-align: center;
             font-size: 28px;
             font-weight: 500;
             padding: 10px 0;
-            border-bottom: 1px solid grey;
+            text-decoration: underline crimson;
         }
 
         .registerForm {

@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .card {
     height: 500px;
     width: 313px;
@@ -27,11 +29,20 @@
                     padding: 15px 0;
                     font-size: 18px;
                     font-weight: 500;
+
+                    @include mobile {
+                        font-size: 16px;
+                    }
                 }
 
                 h4 {
                     font-size: 24px;
                     font-weight: 600;
+                    text-transform: capitalize;
+
+                    @include mobile {
+                        font-size: 20px;
+                    }
                 }
             }
 

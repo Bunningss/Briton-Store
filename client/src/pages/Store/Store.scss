@@ -1,5 +1,8 @@
+@import '../../global.scss';
+
 .store {
     animation: reveal .5s linear;
+    padding: 10px;
 
     .categories {
 
@@ -23,6 +26,10 @@
         text-transform: capitalize;
         margin: 10px 0;
 
+        @include mobile {
+            font-size: 20px;
+        }
+
         span {
             color: rgba(0,0,0,.5);
         }
@@ -31,7 +38,7 @@
     .storeWrapper {
         display: flex;
         flex-wrap: wrap;
-        // justify-content: center;
+        justify-content: center;
         align-items: center;
     }
 }

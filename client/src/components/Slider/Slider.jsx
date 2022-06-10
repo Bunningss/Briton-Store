@@ -1,5 +1,5 @@
 import './Slider.scss';
-import arrow from '../../img/arrow-outlined.png';
+import arrow from '../../img/arrow-outlined-crimson.png';
 import { useRef } from 'react';
 
 const Slider = ({ items }) => {

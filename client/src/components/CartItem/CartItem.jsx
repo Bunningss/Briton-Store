@@ -1,5 +1,5 @@
 import './CartItem.scss';
-import demo  from '../../img/trans-car.png';
+import demo  from '../../img/product-demo.png';
 import WarningButton from '../WarningButton/WarningButton';
 
 const CartItem = () => {
@@ -9,9 +9,9 @@ const CartItem = () => {
             <img src={demo} alt="" />
         </div>
         <div className="textZone">
-            <h6>Title Placeholder</h6>
+            <h6>Boost Energy Drink</h6>
             <p>Quantity 100</p>
-            <p>Price Placeholder £</p>
+            <p>Price - 30£</p>
             <WarningButton text={"Remove"}/>
         </div>
     </div>

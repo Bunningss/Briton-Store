@@ -1,26 +1,29 @@
+import zeus from './img/zeus.webp';
+import vape from './img/vape.webp';
+
 export const sliderData = [
     {
         id: 1,
-        img: "https://images.pexels.com/photos/5186869/pexels-photo-5186869.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        img: vape
     },
     {
         id: 2,
-        img: "https://images.pexels.com/photos/2441454/pexels-photo-2441454.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        img: zeus
     },
     {
         id: 3,
-        img: "https://images.pexels.com/photos/2850287/pexels-photo-2850287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        img: vape
     },
 ];
 
 export const bannerData = [
     {
         id: 1,
-        img: "https://images.pexels.com/photos/2850287/pexels-photo-2850287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        img: zeus
     },
     {
         id: 2,
-        img: "https://images.pexels.com/photos/2850287/pexels-photo-2850287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        img: vape
     },
 ];
 
