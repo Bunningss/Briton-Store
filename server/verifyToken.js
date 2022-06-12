@@ -5,7 +5,7 @@ const verifyToken = (req, res, next) => {
     if(token) {
         jwt.verify(token, process.env.JWT_SEC, (err, user) => {
             if (err) {
-                return res.status(403).json({ msg: "An Error Occured" })
+                return res.status(403).json({ msg: "Invalid Authorization" })
             } else {
                 req.user = user;
                 next();

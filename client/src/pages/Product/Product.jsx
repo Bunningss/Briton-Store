@@ -6,9 +6,14 @@ import plus from '../../img/plus.png';
 import minus from '../../img/minus.png';
 import Feature from '../../components/Feature/Feature';
 import Buystrip from '../../components/Buystrip/Buystrip';
+import { useEffect } from 'react';
 
 const Product = () => {
   const [ quantity, setQuantity ] = useState(1);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
 
   const add = () => {
     setQuantity(quantity + 1)

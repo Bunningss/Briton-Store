@@ -6,6 +6,7 @@ const path = require("path");
 const authRoute = require('./Routes/auth');
 const productRoute = require("./Routes/product");
 const orderRoute = require('./Routes/order');
+const newsletterRoute = require("./Routes/newsletter");
 
 const app = express();
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use('/auth', authRoute);
 app.use("/products", productRoute);
 app.use("/order", orderRoute);
+app.use("/news", newsletterRoute);
 
 mongoose.connect(process.env.MONGO_URL).then(() => {
     console.log("Database Online.")
