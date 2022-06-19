@@ -1,18 +1,17 @@
 import { Link } from 'react-router-dom';
 import './Card.scss';
-import demo from '../../img/product-demo.png';
 
-const Card = () => {
+const Card = ({ item }) => {
   return (
     <div className="card">
-      <Link to='/product/:id'>
+      <Link to={`/product/${item?._id}`}>
         <div className="wrapper">
           <div className="textZone">
-            <p>The father of all drinks.</p>
-            <h4>Boost Energy Drink</h4>
-            <p>Price - 30£</p>
+            <p>{item?.header}</p>
+            <h4>{item?.name}</h4>
+            <p>Price - {item?.price}£</p>
           </div>
-          <img src={demo} alt="" className="cardImg" />
+          <img src={item?.image[0]} alt="" className="cardImg" />
         </div>
       </Link>
     </div>

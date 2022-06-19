@@ -7,13 +7,30 @@ import minus from '../../img/minus.png';
 import Feature from '../../components/Feature/Feature';
 import Buystrip from '../../components/Buystrip/Buystrip';
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { publicRequest } from '../../requestMethods';
 
 const Product = () => {
   const [ quantity, setQuantity ] = useState(1);
+  const [ product, setProduct ] = useState('');
+  const location = useLocation();
+  const id = location.pathname.split('/')[2];
 
   useEffect(() => {
     window.scrollTo(0, 0)
   }, []);
+
+  useEffect(() => {
+    const getProduct = async () => {
+      try {
+        const res = await publicRequest.get(`/products/product/${id}`)
+        setProduct(res.data);
+      } catch (err) {
+        console.log(err)
+      } 
+    }
+    getProduct();
+  }, [id])
 
   const add = () => {
     setQuantity(quantity + 1)
@@ -29,12 +46,12 @@ const Product = () => {
     <>
     <div className='product'>
       <div className="productLeft">
-        <img src={demo} alt="" className="productImg" />
+        <img src={product.image} alt={product.name} className="productImg" />
         <Buystrip/>
       </div>
       <div className="productRight">
-        <h2 className="headerText">Boost Energy Drink</h2>
-        <h3 className="headerText price">Price - 30£</h3>
+        <h2 className="headerText">{product.name}</h2>
+        <h3 className="headerText price">Price - {product.price}£</h3>
         <div className="features">
           <Feature/>
           <Feature/>
