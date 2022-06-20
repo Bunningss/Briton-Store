@@ -1,10 +1,10 @@
 import './Feature.scss';
 
-const Feature = () => {
+const Feature = ({ feature }) => {
   return (
         <div className="feature">
-            <p>Placeholder: </p>
-            <p><span>Feature</span></p>
+            {/* <p></p> */}
+            <p><span>{feature}</span></p>
         </div>
   )
 }

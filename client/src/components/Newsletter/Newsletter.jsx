@@ -2,6 +2,7 @@ import './Newsletter.scss';
 import PrimaryButton from '../PrimaryButton/PrimaryButton';
 import FormInput from '../FormInput/FormInput'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Newsletter = () => {
   const [ values, setValues ] = useState({
@@ -49,6 +50,7 @@ const Newsletter = () => {
                 <PrimaryButton text={"Subscribe"}/>
                 <div className="agreement">
                   <input type="checkbox" name="" id="" />
+                  <p>By clicking subscribe I agree to Briton Store <Link to=''>Terms of Service</Link> and policy.</p>
                 </div>
             </form>
         </div>

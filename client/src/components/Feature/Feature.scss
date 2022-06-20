@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
             .feature {
                 width: 60%;
                 display: flex;
@@ -8,9 +10,14 @@
                 border-radius: 5px;
                 border: 1px solid grey;
 
+                @include mobile {
+                    width: 100%;
+                }
+
                 p {
                     font-size: 18px;
                     font-weight: 500;
+                    text-transform: capitalize;
 
                     span {
                         font-size: 20px;

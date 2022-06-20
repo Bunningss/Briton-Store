@@ -1,17 +1,16 @@
 import './CartItem.scss';
-import demo  from '../../img/product-demo.png';
 import WarningButton from '../WarningButton/WarningButton';
 
-const CartItem = () => {
+const CartItem = ({ item }) => {
   return (
     <div className='cartItem'>
         <div className="imageContainer">
-            <img src={demo} alt="" />
+            <img src={item?.product?.image[0]} alt={item?.product?.name} />
         </div>
         <div className="textZone">
-            <h6>Boost Energy Drink</h6>
-            <p>Quantity 100</p>
-            <p>Price - 30£</p>
+            <h6>{item?.product?.name}</h6>
+            <p>Quantity - {item.quantity}</p>
+            <p>Price - {item.price*item.quantity}£</p>
             <WarningButton text={"Remove"}/>
         </div>
     </div>

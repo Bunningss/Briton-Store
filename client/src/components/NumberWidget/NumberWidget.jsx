@@ -1,8 +1,10 @@
+import { useSelector } from 'react-redux';
 import './NumberWidget.scss';
 
 const NumberWidget = () => {
+  const quantity = useSelector(state=>state.cart.quantity)
   return (
-    <span className='widget'>01</span>
+    <span className='widget'>{quantity}</span>
   )
 }
 

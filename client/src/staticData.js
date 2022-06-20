@@ -1,29 +1,30 @@
+import trefoil from './img/trefoil.jpg';
+import pasta from './img/vape.webp';
 import zeus from './img/zeus.webp';
-import vape from './img/vape.webp';
 
 export const sliderData = [
     {
         id: 1,
-        img: vape
-    },
-    {
-        id: 2,
         img: zeus
     },
     {
+        id: 2,
+        img: trefoil
+    },
+    {
         id: 3,
-        img: vape
+        img: pasta
     },
 ];
 
 export const bannerData = [
     {
         id: 1,
-        img: zeus
+        img: pasta
     },
     {
         id: 2,
-        img: vape
+        img: trefoil
     },
 ];
 

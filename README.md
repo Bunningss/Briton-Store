@@ -6,14 +6,14 @@
 
 ## Subscription
 
-## Newsletter - Terms and Services
+## Terms and Services
 
 ## Login Register Step 2
 
 ## Product Description
 
-## Product Page Non Responsive
+##
 
-## Slider + Banner Images (srcset)
+## Slider + Banner Images ( srcset )
 
-## Redux - Cart, User
+## Redux - Cart ( Remove Product ), User
