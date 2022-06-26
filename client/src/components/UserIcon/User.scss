@@ -5,10 +5,12 @@
     align-items: center;
     gap: 8px;
     background-color: #fff;
-    padding: 10px;
+    padding: 2px;
     border-radius: 41px;
     cursor: pointer;
     position: relative;
+    height: 30px;
+    width: 30px;
     transition: all .3s ease;
 
     @include mobile {
@@ -23,6 +25,7 @@
         font-weight: 600;
         font-size: 14px;
         color: var(--font);
+        text-transform: capitalize;
 
         @include mobile {
             display: none;

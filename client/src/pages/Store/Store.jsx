@@ -4,6 +4,7 @@ import Section from '../../components/Section/Section';
 import Card from '../../components/Card/Card';
 import { useEffect, useRef, useState } from 'react';
 import { publicRequest } from '../../requestMethods';
+import { linkBar } from '../../staticData';
 
 const Store = () => {
     const store = useRef();
@@ -42,18 +43,15 @@ const Store = () => {
     },[]);
 
   return (
-    <div className='store'>
+    <div className='store default'>
         <div className="categories">
             <h2 className="header">Categories. <span>Browse through your favourite items.</span></h2>
             <div className="categoryContainer">
-                <Category handleClick={handleClick}/>
-                <Category handleClick={handleClick}/>
-                <Category handleClick={handleClick}/>
-                <Category handleClick={handleClick}/>
-                <Category handleClick={handleClick}/>
-                <Category handleClick={handleClick}/>
-                <Category handleClick={handleClick}/>
-                <Category handleClick={handleClick}/>
+                {
+                    linkBar.map((item) => (
+                        <Category handleClick={handleClick} item={item}/>
+                    ))
+                }
             </div>
         </div>
         <h2 className="header">the latest. <span>take a look at whats new, right now!</span></h2>

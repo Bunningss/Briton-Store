@@ -6,7 +6,7 @@ const Cart = () => {
   const cart = useSelector(state => state.cart)
   const cartItems = cart?.products
   return (
-    <div className='cart'>
+    <div className='cart default'>
         <h2 className="header">Review your bag.</h2>
         <h4 className="sectionHeader">Free delivery and free returns.</h4>
         {

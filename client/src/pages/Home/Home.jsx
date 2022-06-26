@@ -35,7 +35,7 @@ const Home = () => {
     getDeals();
   },[]);
   return (
-    <div className='home'>
+    <div className='home default'>
           <Slider items={sliderData}/>
           {
             bannerData.map((item) => (

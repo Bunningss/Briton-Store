@@ -31,7 +31,7 @@ a {
 
 ::selection {
     color: #fff;
-    background-color: crimson;
+    background-color: var(--accentColor);
 }
 
 // Responsive
@@ -61,12 +61,26 @@ $mobile: 500px;
 
 // Universal
 
-.sectionPadding {
-    padding-left: 300px;
+.default {
+    animation: reveal .8s linear;
+}
 
-    @include laptop {
-        padding-left: 20px;
-    }
+.redLight {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--accentColor);
+    text-align: center;
+    margin: 10px 0;
+    transition: all 1s ease;
+}
+
+.greenLight {
+    font-size: 14px;
+    font-weight: 600;
+    color: green;
+    text-align: center;
+    margin: 10px 0;
+    transition: all 1s ease;
 }
 
 // Animations

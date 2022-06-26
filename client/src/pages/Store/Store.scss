@@ -1,7 +1,6 @@
 @import '../../global.scss';
 
 .store {
-    animation: reveal .5s linear;
     padding: 10px;
 
     .categories {
@@ -14,6 +13,7 @@
 
         .categoryContainer {
             display: flex;
+            justify-content: center;
             gap: 20px;
             overflow-x: scroll;
             overflow-y: hidden;
@@ -28,7 +28,7 @@
 
         span {
             color: rgba(0,0,0,.5);
-            text-decoration: underline var(--accentColor);
+            // text-decoration: underline var(--accentColor);
         }
     }
 

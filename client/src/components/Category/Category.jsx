@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 import logo from '../../img/briton.png';
 
 const Category = (props) => {
-  const { handleClick } = props;
+  const { handleClick, item } = props;
   return (
-    <Link to='' onClick={handleClick} className='categoryWrapper'>
+    <Link to='' onClick={handleClick} >
         <div className="category">
             <img src={logo} alt="" />
-            <p>placeholder</p>
+            <p>{item.name}</p>
         </div>
     </Link>
   )

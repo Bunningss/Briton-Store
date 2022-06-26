@@ -5,7 +5,7 @@ import zeus from './img/zeus.webp';
 export const sliderData = [
     {
         id: 1,
-        img: zeus
+        img: "http://demo.britonstore.com/public/uploads/all/hOHSQPrEIMWVzXomTbPXE5LZeBnXQMxhE0WnUDfx.jpg"
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ export const sliderData = [
     },
     {
         id: 3,
-        img: pasta
+        img: "http://demo.britonstore.com/public/uploads/all/LLDJdBkwA3jYiVLf8VTDWmxrZjPI3ou5MgUcMnn8.png"
     },
 ];
 
@@ -24,7 +24,7 @@ export const bannerData = [
     },
     {
         id: 2,
-        img: trefoil
+        img: "http://demo.britonstore.com/public/uploads/all/LLDJdBkwA3jYiVLf8VTDWmxrZjPI3ou5MgUcMnn8.png"
     },
 ];
 
@@ -47,32 +47,38 @@ export const linkBar = [
     {
         id: 1,
         name: "Store",
-        href: "store"
+        href: "store",
+        img: ""
     },
     {
         id: 2,
         name: "Beverages",
-        href: ""
+        href: "",
+        img: ""
     },
     {
         id: 3,
         name: "Disposable Vape",
-        href: ""
+        href: "",
+        img: ""
     },
     {
         id: 4,
         name: "Variety Pasta",
-        href: ""
+        href: "",
+        img: ""
     },
     {
         id: 5,
         name: "Confectionary",
-        href: ""
+        href: "",
+        img: ""
     },
     {
         id: 6,
         name: "Health, Beauty & Personal Care",
-        href: ""
+        href: "",
+        img: ""
     },
 ];
 

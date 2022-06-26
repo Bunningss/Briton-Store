@@ -2,7 +2,6 @@
 
 .product {
     display: flex;
-    animation: reveal .5s linear;
 
     @include mobile {
         flex-direction: column;

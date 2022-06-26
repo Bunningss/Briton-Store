@@ -44,7 +44,7 @@ const Product = () => {
 
   const handleCart = () => {
     dispatch(addProduct({
-      product, quantity, price: product.price
+      product, quantity, price: product.price, id: product._id
     }))
   }
 
@@ -52,7 +52,7 @@ const Product = () => {
 
   return (
     <>
-    <div className='product'>
+    <div className='product default'>
       <div className="productLeft">
         <img src={product.image} alt={product.name} className="productImg" />
         <Buystrip/>

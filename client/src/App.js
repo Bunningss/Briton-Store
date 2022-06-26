@@ -13,10 +13,13 @@ import Sidebar from './components/Sidebar/Sidebar';
 import { useState } from 'react';
 import Register from './pages/Register/Register';
 import Cart from './pages/Cart/Cart';
+import { useSelector } from 'react-redux';
 
 function App() {
   const [ active, setActive ] = useState(false);
 
+
+  const user = useSelector(state=>state.user?.currentUser)
   return (
     <BrowserRouter>
       <Navbar active={active} setActive={setActive}/>

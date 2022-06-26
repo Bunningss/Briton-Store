@@ -1,8 +1,8 @@
 import './WarningButton.scss';
 
-const WarningButton = ({ text }) => {
+const WarningButton = ({ text,onClick }) => {
   return (
-    <button className='btnWrng'>{text}</button>
+    <button onClick={onClick} className='btnWrng'>{text}</button>
   )
 }
 
