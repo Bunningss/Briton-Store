@@ -6,6 +6,7 @@ import Checkout from '../../components/Checkout/Checkout';
 const Cart = () => {
   const cart = useSelector(state => state.cart);
   const cartItems = cart?.products;
+  console.log(cart)
   const emptyCart = cart.products.length === 0
 
   return (

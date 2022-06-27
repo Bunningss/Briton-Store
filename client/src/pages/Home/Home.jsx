@@ -1,11 +1,12 @@
 import Slider from '../../components/Slider/Slider';
 import './Home.scss';
-import { sliderData } from '../../staticData';
+import { sliderData, pastaPacks } from '../../staticData';
 import { bannerData } from '../../staticData';
 import Section from '../../components/Section/Section';
 import Banner from '../../components/Banner/Banner';
 import { useEffect, useState } from 'react';
 import { publicRequest } from '../../requestMethods';
+import LargeCard from '../../components/LargeCard/LargeCard';
 
 const Home = () => {
   const [ featured, setFeatured ] = useState([]);
@@ -44,6 +45,13 @@ const Home = () => {
           }
           <Section header={"Featured Products"} section={featured}/>
           <Section header={"Hot Deals"} section={deals}/>
+          <div className="pastaPacks">
+            {
+              pastaPacks.map((pack) => (
+                <LargeCard pack={pack} key={pack.id}/>
+              ))
+            }
+          </div>
     </div>
   )
 }

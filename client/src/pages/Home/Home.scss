@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .home {
 
     .headerTitle {
@@ -5,5 +7,18 @@
         margin: 30px 0;
         font-size: 28px;
         font-weight: 500;
+    }
+
+    .pastaPacks {
+        padding: 10px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        @include laptop {
+            
+        }
     }
 }

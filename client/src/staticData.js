@@ -103,3 +103,34 @@ export const loginOptions = [
         icon: ""
     },
 ];
+
+export const pastaPacks = [
+    {
+        id: 1,
+        name: "Puro pasta variety pack of 4",
+        image: "https://britonstore.com/wp-content/uploads/elementor/thumbs/Untitled-design-2022-01-02T232842.266-pifjh6c2kfldhholww6gj1s2qwe1oucfx7g5td1zsg.png",
+        details: [],
+        price: "5.99"
+    },
+    {
+        id: 2,
+        name: "Puro pasta variety pack of 8",
+        image: "https://britonstore.com/wp-content/uploads/elementor/thumbs/Untitled-design-2022-01-02T233102.207-pifjgzr78lcd87y5zbc2jlful7ah6ymbkavrgfbr00.png",
+        details: [],
+        price: "6.99"
+    },
+    {
+        id: 3,
+        name: "Puro pasta variety pack of 16",
+        image: "https://britonstore.com/wp-content/uploads/elementor/thumbs/Untitled-design-2022-01-02T232959.337-pifjh2kpt3g871u2iujy92q8dcwku1xikou7w97khc.png",
+        details: [],
+        price: "7.99"
+    },
+    {
+        id: 4,
+        name: "Puro pasta variety pack of 24",
+        image: "https://britonstore.com/wp-content/uploads/elementor/thumbs/Untitled-design-2022-01-02T232646.864-pifjhbz33ievm5djsi6mvyxnsjifn5cz032hmbl0qk.png",
+        details: [],
+        price: "8.99"
+    },
+];
