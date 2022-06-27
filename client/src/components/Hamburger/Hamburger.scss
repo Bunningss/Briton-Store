@@ -15,19 +15,12 @@
     }
 
     &.active {
-        // position: fixed;
-        // top: 20px;
-        // right: 20px;
-
-        @include mobile {
-            // right: 10px;
-        }
 
         .line {
             background-color: #fff;
 
             &:nth-child(1) {
-                transform: rotate(45deg) translate(2.8px, -.6px);
+                transform: rotate(45deg) translate(3.3px, .1px);
             }
 
             &:nth-child(2) {
