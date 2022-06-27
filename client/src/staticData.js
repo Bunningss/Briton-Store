@@ -1,30 +1,30 @@
-import trefoil from './img/trefoil.jpg';
-import pasta from './img/vape.webp';
-import zeus from './img/zeus.webp';
+import lemon from './img/lemon.jpg';
+import lemno from './img/lemno.jpg';
+import tub from './img/tub.jpg';
 
 export const sliderData = [
     {
         id: 1,
-        img: "http://demo.britonstore.com/public/uploads/all/hOHSQPrEIMWVzXomTbPXE5LZeBnXQMxhE0WnUDfx.jpg"
+        img: lemno
     },
     {
         id: 2,
-        img: trefoil
+        img: tub
     },
     {
         id: 3,
-        img: "http://demo.britonstore.com/public/uploads/all/LLDJdBkwA3jYiVLf8VTDWmxrZjPI3ou5MgUcMnn8.png"
+        img: lemon
     },
 ];
 
 export const bannerData = [
     {
         id: 1,
-        img: pasta
+        img: lemon
     },
     {
         id: 2,
-        img: "http://demo.britonstore.com/public/uploads/all/LLDJdBkwA3jYiVLf8VTDWmxrZjPI3ou5MgUcMnn8.png"
+        img: tub
     },
 ];
 

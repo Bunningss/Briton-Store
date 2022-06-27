@@ -14,6 +14,7 @@ import { useState } from 'react';
 import Register from './pages/Register/Register';
 import Cart from './pages/Cart/Cart';
 import { useSelector } from 'react-redux';
+import Error404 from './pages/Error404/Error404';
 
 function App() {
   const [ active, setActive ] = useState(false);
@@ -26,6 +27,7 @@ function App() {
       <Sidebar active={active} setActive={setActive}/>
       <Bar/>
       <Routes>
+        <Route path="*" element={<Error404/>}/>
         <Route exact path='/' element={<Home/>}/>
         <Route exact path='/store' element={<Store/>}/>
         <Route exact path='/cart' element={<Cart/>}/>

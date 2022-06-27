@@ -1,6 +1,7 @@
 import CartItem from '../../components/CartItem/CartItem';
 import './Cart.scss';
 import { useSelector } from 'react-redux';
+import Checkout from '../../components/Checkout/Checkout';
 
 const Cart = () => {
   const cart = useSelector(state => state.cart)
@@ -14,6 +15,7 @@ const Cart = () => {
             <CartItem key={item.product._id} item={item}/>
           ))
         }
+        <Checkout/>
     </div>
   )
 }
