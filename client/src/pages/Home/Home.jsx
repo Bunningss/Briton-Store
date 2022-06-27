@@ -46,11 +46,14 @@ const Home = () => {
           <Section header={"Featured Products"} section={featured}/>
           <Section header={"Hot Deals"} section={deals}/>
           <div className="pastaPacks">
-            {
-              pastaPacks.map((pack) => (
-                <LargeCard pack={pack} key={pack.id}/>
-              ))
-            }
+            <h2 className="sectionHeader">Pasta Packages</h2>
+            <div className="pastaPackWrapper">
+              {
+                pastaPacks.map((pack) => (
+                  <LargeCard pack={pack} key={pack.id}/>
+                ))
+              }
+            </div>
           </div>
     </div>
   )

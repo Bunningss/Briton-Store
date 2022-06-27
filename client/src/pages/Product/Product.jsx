@@ -70,9 +70,9 @@ const Product = () => {
         <div className="quantity">
           <p>Select Quantity: </p>
           <div className="quantityWrapper">
-            <img onClick={() => handleQuantity("inc")} src={plus} alt="" />
-            <span>{quantity}</span>
             <img onClick={() => handleQuantity("dec")} src={minus} alt="" />
+            <span>{quantity}</span>
+            <img onClick={() => handleQuantity("inc")} src={plus} alt="" />
           </div>
         </div>
         <PrimaryButton text={"Add to Bag"} onClick={handleCart}/>

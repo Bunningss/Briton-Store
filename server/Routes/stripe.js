@@ -2,7 +2,7 @@ const router = require("express").Router();
 const stripeAPI = require("stripe")("sk_test_51KLN11ITl57zrxjublXL4K8jF2bmI6yVwtSi9i8HWDp691IYFqgye4fg8D0lzps4uoJl67y3WQCNHP9ziecQtu4600z5MYfWCo");
 
 router.post("/", async (req, res) => {
-    const domainUrl = process.send.LOCAL_URL || "http://localhost:3000";
+    const domainUrl = process.env.LOCAL_URL;
     const { line_items, customer_email } = req.body;
     // Check req.body for customer email and products
     if (!line_items || !customer_email) {

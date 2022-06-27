@@ -2,11 +2,26 @@
 
 .bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     gap: 20px;
     height: 30px;
     background-color: var(--grey);
+
+    @include ipad {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-x: scroll;
+        padding: 0 10px;
+    }
+
+    .listItemContainer {
+
+        .listItem {
+            width: max-content;
+        }
+    }
 
     @include tab {
         display: none;
