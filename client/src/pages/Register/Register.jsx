@@ -4,6 +4,7 @@ import FormInput from '../../components/FormInput/FormInput';
 import { useState } from 'react';
 import { publicRequest } from '../../requestMethods';
 import { useNavigate } from 'react-router-dom';
+import Terms from '../../components/Terms/Terms';
 
 const Register = () => {
   const navigate = useNavigate();
@@ -76,7 +77,8 @@ const Register = () => {
                   <FormInput {...input} key={input.id} value={values[input.name]} onChange={onChange}/>
                 ))
               }
-                <PrimaryButton text={"Continue"} onClick={handleRegister}/>
+              <Terms/>
+              <PrimaryButton text={"Continue"} onClick={handleRegister}/>
                 {
                   error && <p className='redLight'>{error}</p>
                 }

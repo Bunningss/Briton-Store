@@ -7,7 +7,7 @@ const LoginOptions = () => {
     <div className='loginOptions'>
       {
         loginOptions.map((option) => (
-          <Option key={option.id} option={option}/>
+          <Option option={option}/>
         ))
       }
     </div>

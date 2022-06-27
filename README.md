@@ -2,13 +2,13 @@
 
 ## Product Filter
 
-## Payment
+## Order Register
 
 ## Subscription
 
 ## Terms and Services
 
-## Login Register Step 2
+##
 
 ## Product Description
 
@@ -16,4 +16,4 @@
 
 ## Slider + Banner Images ( srcset )
 
-## Redux - Cart ( Remove Product ), User
+##

@@ -1,30 +1,29 @@
-import lemon from './img/lemon.jpg';
-import lemno from './img/lemno.jpg';
-import tub from './img/tub.jpg';
+import vape from './img/vape.webp';
+import zeus from './img/zeus.webp';
 
 export const sliderData = [
     {
         id: 1,
-        img: lemno
+        img: vape
     },
     {
         id: 2,
-        img: tub
+        img: zeus
     },
     {
         id: 3,
-        img: lemon
+        img: vape
     },
 ];
 
 export const bannerData = [
     {
         id: 1,
-        img: lemon
+        img: zeus
     },
     {
         id: 2,
-        img: tub
+        img: vape
     },
 ];
 

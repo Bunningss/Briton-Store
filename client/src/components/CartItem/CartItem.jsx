@@ -19,7 +19,7 @@ const handleCart = () => {
         <div className="textZone">
             <h6>{item?.product?.name}</h6>
             <p>Quantity - {item.quantity}</p>
-            <p>Price - {item.price*item.quantity}£</p>
+            <p>Total Price - {item.price*item.quantity}£</p>
             <WarningButton text={"Remove"} onClick={handleCart}/>
         </div>
     </div>

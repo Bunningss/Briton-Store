@@ -1,10 +1,20 @@
 .checkout {
-    
+    padding: 10px;
+
     .checkoutContent {
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column;
         align-items: flex-end;
 
-        .primaryBtn {}
+        h6 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .checkoutBtn {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 }

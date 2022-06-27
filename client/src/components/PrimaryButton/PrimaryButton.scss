@@ -1,3 +1,5 @@
+@import '../../global.scss';
+
 .primaryBtn {
     padding: 15px 15px;
     min-width: 150px;
@@ -11,6 +13,12 @@
     margin: 10px 0;
     cursor: pointer;
     transition: all .3s ease;
+
+    @include mobile {
+        font-size: 12px;
+        min-width: 80px;
+        padding: 10px 15px;
+    }
 
     &:hover {
         background-color: var(--accentColor);

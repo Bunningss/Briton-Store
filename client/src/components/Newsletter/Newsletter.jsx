@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { publicRequest } from '../../requestMethods';
 import { useEffect } from 'react';
+import Terms from '../Terms/Terms';
 
 const Newsletter = () => {
   const [ error, setError ] = useState('');
@@ -74,10 +75,7 @@ const Newsletter = () => {
                 {
                   res && <p className='greenLight'>{res}</p>
                 }
-                <div className="agreement">
-                  <input className='checkbox' required type="checkbox" name="" id="" />
-                  <p>By clicking subscribe I agree to Briton Store <Link to=''>Terms of Services</Link> and privacy policy.</p>
-                </div>
+                <Terms/>
             </form>
         </div>
     </div>

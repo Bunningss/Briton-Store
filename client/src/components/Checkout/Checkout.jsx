@@ -36,8 +36,10 @@ const Checkout = () => {
   return (
     <div className='checkout'>
         <div className="checkoutContent">
-          {/* <button onClick={handleCheckout}>click</button> */}
-            <PrimaryButton text={"Proceed to checkout"} onClick={handleCheckout}/>
+          <h6>Total - {cart.total}£</h6>
+        </div>
+        <div className="checkoutBtn">
+          <PrimaryButton text={"Proceed to checkout"} onClick={handleCheckout}/>
         </div>
     </div>
   )

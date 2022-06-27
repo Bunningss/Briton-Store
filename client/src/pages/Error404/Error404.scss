@@ -1,8 +1,8 @@
+@import '../../global.scss';
+
 .err404 {
     height: 100vh;
-    // background-image: url("../../img/error.jpg");
-    // background-size: cover;
-    // background-position: center;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,13 +13,23 @@
         font-size: 40px;
         font-weight: 500;
         text-transform: capitalize;
+        text-align: center;
         text-decoration: underline var(--accentColor);
+
+        @include mobile {
+            font-size: 24px;
+        }
     }
 
     h3 {
         font-size: 30px;
         font-weight: 500;
         text-transform: capitalize;
+        text-align: center;
         text-decoration: underline var(--accentColor);
+
+        @include mobile {
+            font-size: 28px;
+        }
     }
 }
